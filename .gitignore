@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Environnements virtuels
+env/
+venv/
+ENV/
+.venv/
+
+# Fichiers de logs
+*.log
+
+# Données (optionnel, à adapter selon ce que tu veux versionner)
+data/
+animation.gif
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Fichiers de sauvegarde d'éditeurs
+*~
+*.swp
+*.swo
