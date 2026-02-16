@@ -40,4 +40,4 @@ animation.gif
 *.swo
 
 training_history.png
-dual_encoder.pth
+dual_encoder_model.pth
