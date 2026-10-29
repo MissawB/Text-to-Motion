@@ -47,7 +47,10 @@ Submissions must be a CSV file containing the query_id and the top 10 ranked mot
 * Rankings must be ordered from *most relevant* (candidate_1) to *least relevant.* 
 
 ## 🧠 Solution
-The reference implementation is [`notebook.ipynb`](notebook.ipynb) (best validation score: **0.9065** weighted Recall@K, epoch 30/60).
+The reference implementation is [`notebook.ipynb`](notebook.ipynb).
+
+🏆 **Best private leaderboard score of the competition: 0.86153** (weighted Recall@K).
+Best validation score: 0.9065 (epoch 30/60).
 
 - **Text Encoder**: `all-mpnet-base-v2` (last 2 layers fine-tuned) → mean pooling → projection MLP
 - **Motion Encoder**: Gated Person Fusion (per-frame weighting of the two persons) → BiGRU (2 layers, bidirectional) → attention pooling → projection MLP
