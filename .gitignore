@@ -41,3 +41,4 @@ animation.gif
 
 training_history.png
 dual_encoder_model.pth
+*.pth
