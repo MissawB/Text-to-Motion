@@ -64,7 +64,7 @@ Mirror/flip augmentation is intentionally excluded: texts contain directional wo
 | `notebook.ipynb` | Full pipeline: data, model, training, validation, submission (Kaggle or local) |
 | `exploration.ipynb` | Data exploration, 3D motion visualization, evaluation baseline |
 | `src/` | Earlier script-based version of the pipeline |
-| `submission.csv` | Submission file |
+| `requirements.txt` | Python dependencies |
 
 ## 📚 References & Research
 This project is inspired by and references the following state-of-the-art work:
@@ -81,6 +81,12 @@ git clone https://github.com/MissawB/Text-to-Motion.git
 # Install dependencies
 pip install -r requirements.txt
 ```
+
+1. Download the competition data from [Kaggle](https://kaggle.com/competitions/tmr-text-motion-retrieval) (`train.txt`, `motions/`, `texts/`, `test/`).
+2. Open `notebook.ipynb`. Data paths are detected automatically on Kaggle and Lightning AI; for a local run, set `base` in `_detect_paths()` (first code cell) to the folder containing `data/`.
+3. Run all cells: validation batches are generated from a held-out split, the best checkpoint is saved to `best_model.pth`, and the test predictions are written to `submission.csv`.
+
+A GPU is recommended (about 90 s per epoch on a Kaggle GPU, 60 epochs).
 
 ## 📝 Citation
 ```
